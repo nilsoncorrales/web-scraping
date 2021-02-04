@@ -21,5 +21,18 @@ _Ejecutar script python_
 ```
 python scraping-karolg.py
 ```
+or windows
+
+```
+venv/Scripts/python.exe scraping-karolg.py
+```
+
+or linux
+
+```
+venv/bin/python scraping-karolg.py
+```
+
+
 
 
