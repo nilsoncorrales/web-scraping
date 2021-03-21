@@ -38,9 +38,10 @@ def extractLetter(dowloandLetter):
 
 
 def init():
-    r = requests.get('https://www.musica.com/letras.asp?letras=25272')
+    r = requests.get('https://servicios.noticiasperu.pe//gui/view/VistaPautaPrensa.php?idPauta=2101020140010025544&bool=1')
     data = r.content.decode('utf-8', errors="replace")
     soup = BeautifulSoup(data, 'lxml')
+    print(soup)
     # obtengo el ul que contiene el nombre de la cancion y el url de a canción
     linksUl = soup.find_all('ul', class_="listado-letras")
     # me voy dentro del contenido de este arreglo
